@@ -1,0 +1,13 @@
+/*
+Theme Name: Lined Blog Theme
+Author: Md. Abtahi Tajwar
+Author URL: https://facebook.com/abtahi.tajwar.75
+Description: This is a theme for personal blogging website. 
+Version: 1.0.0
+Text Domain: linedblogtheme
+Tags: sidebar, blog-card, hero-section, topnav, navbar, footer, category, archive
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
