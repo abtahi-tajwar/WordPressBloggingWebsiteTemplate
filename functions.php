@@ -165,6 +165,17 @@ function customizables($wp_customize)
         'section' => 'subhero',
         'settings' => 'subhero_description3'
     )));
+
+    //Add featured post
+    $wp_customize->add_section('featured-post-section', array(
+        'title' => 'Featured Post'
+    ));
+    $wp_customize->add_setting('featured-post');
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'feature-post-control', array(
+        'label' => 'Select a featured post. (Always fill the excerpt section for the featured post in the right panel',
+        'section' => 'featured-post-section',
+        'settings' => 'featured-post'
+    )));
 }
 add_action("customize_register", "customizables");
 

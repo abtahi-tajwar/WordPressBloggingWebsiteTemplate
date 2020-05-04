@@ -14,7 +14,4 @@
     </div>
     </a>
 </div>
-<?php endwhile; endif; 
-    $post = get_post(57);
-    the_post_thumbnail('thumbnail_image');
-?>
+<?php endwhile; endif; ?>

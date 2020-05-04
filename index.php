@@ -12,6 +12,7 @@
 <?php 
     get_template_part('subhero');
     get_template_part('blogs');
+    get_template_part('featured-post')
 ?>
 
 <?php get_footer(); ?>
