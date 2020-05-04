@@ -4,6 +4,17 @@ function include_stylesheet()
     wp_enqueue_style('style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'include_stylesheet');
+//Registering navigation menus
+function initial_theme_setup() {
+    //Registering all the navigation menus
+    register_nav_menus( array (
+        'primary' => __('Primary Menu')
+    ));
+    add_theme_support( 'post-thumbnails' );
+    add_image_size('thumbnail_image', 361, 155, true);
+    add_image_size('banner_image', 791, 339, array('top', 'left'));
+}
+add_action('after_setup_theme', 'initial_theme_setup');
 
 function customizables($wp_customize)
 {

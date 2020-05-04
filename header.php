@@ -52,9 +52,12 @@
             </div>
             <div class="navbar_menu_container">
                 <ul class="navbar_menu">
-                    <li><a href="">Categories</a></li>
-                    <li><a href="">Featured Blog</a></li>
-                    <li><a href="">Featured Author</a></li>
+                    <?php
+                    $args = array(
+                        'theme_location' => 'primary'
+                    ); 
+                    wp_nav_menu($args); 
+                    ?>
                 </ul>
             </div>
             <div class="navbar_search_icon_container">
