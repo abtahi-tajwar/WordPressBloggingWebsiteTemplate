@@ -10,9 +10,10 @@
 </div>
 
 <?php 
-    get_template_part('subhero');
-    get_template_part('blogs');
-    get_template_part('featured-post')
+    get_template_part( 'subhero' );
+    get_template_part( 'blogs' );
+    get_template_part( 'featured-post' );
+    get_sidebar();
 ?>
 
 <?php get_footer(); ?>
